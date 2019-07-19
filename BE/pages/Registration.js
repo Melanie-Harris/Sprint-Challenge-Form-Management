@@ -43,8 +43,8 @@ function Registration({ touched, errors, values }) {
 export default withFormik({
     mapPropsToValues() {
         return {
-            username: "",
-            password: ""
+            username: "Melanie",
+            password: "password"
         };
     },
     validationSchema: Yup.object().shape({
@@ -57,7 +57,7 @@ export default withFormik({
     handleSubmit(values, formikBag) {
         formikBag.setSubmitting(true)
         const url =
-            "http://localhost:5000/api/register";
+            "http://localhost:6000/api/register";
         axios
             .post(url, values)
             .then(response => {
