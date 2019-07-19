@@ -9,8 +9,10 @@ import './App.css';
 function App() {
   return (
     <div>
+    <div>
       <Route path="/" component={Registration} />
       <PrivateRoute path="/AfterRegPage" component={AfterRegPage} />
+    </div>
     </div>
   );
 }
