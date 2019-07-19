@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { axiosWithAuth } from '../../axiosAuth';
+import { axiosWithAuth } from '../../src/axiosAuth';
 // import protectedRoutes from '../routes/protectedRoutes';
-import Logout from '../pages/Logout';
-
+import Logout from './Logout';
 
 
 export default function AfterRegPage(props) {
