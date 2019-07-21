@@ -2,8 +2,8 @@ import axios from "axios";
 
 
 
-export const axiosWithAuth = () => {
-    const token = localStorage.getItem('token');
+export const axiosWithAuth = (token) => {
+    
 
     return axios.create({
         headers: {
@@ -13,9 +13,7 @@ export const axiosWithAuth = () => {
     });
 };
 
-function name(name1, name2) {
-    return
-}
+
 
 export const login = (userCredentials) => {
     axios.post('/api/login', userCredentials)
