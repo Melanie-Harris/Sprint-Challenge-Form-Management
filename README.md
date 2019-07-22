@@ -24,48 +24,55 @@ In the challenge for this Sprint, you will demonstrate proficiency by creating a
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Why are forms used so often in web applications and software?
+- [x] Why are forms used so often in web applications and software?
+    Forms are use often because of the functionality they bring to a web page. Forms allow a user to enter data in the form of text, email, radio, and other fields that are then sent to a server for processing of the data.
 
-- [ ] What advantages are there by using a forms library like Formik?
+- [x] What advantages are there by using a forms library like Formik?
+    A library is a collection of implementations of behavior, written in terms of a language, that has a well-defined interface by which the behavior is invoked. Formik library advantages include getting values in and out of form state, Validation and error messages, Handling form submission.
 
-- [ ] What is stateful logic?
+- [x] What is stateful logic?
+    Stateful logic is any code that uses state. If the behavior of a component is dependent on the state of the component then it can be termed as stateful.
 
-- [ ] What is a custom hook, and what does it mean to compose hooks together?
+- [X] What is a custom hook, and what does it mean to compose hooks together?
+    A custom Hook is a JavaScript function whose name starts with ” use ” and that may call other Hooks. 
 
-- [ ] Describe the process of retriving a token from a server and using that token in subsequent API calls.
+
+- [x] Describe the process of retriving a token from a server and using that token in subsequent API calls.
+         A token includes the identity and privileges of the user account. Retrieving a token means you gained accesses to the users info. Using that info in API calls will deliver the info to the provider that you're requesting from and send a response back. 
+
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
+- [x] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [x] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
 
-- [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
-- [ ] Navigate to the BE folder in this repository (this is where your server is located) from the command line, install the dependencies, and run `yarn start` or `npm start` to spin up the server provided for you.
-- [ ] In the terminal, navigate back to the main folder, then into the `client` folder.
-- [ ] Create your React app here.
+- [x] Implement the project on this Branch, **committing progress & changes often.**
+- [x] Push commits: `git push origin <firstName-lastName>`.
+- [x] Navigate to the BE folder in this repository (this is where your server is located) from the command line, install the dependencies, and run `yarn start` or `npm start` to spin up the server provided for you.
+- [x] In the terminal, navigate back to the main folder, then into the `client` folder.
+- [x] Create your React app here.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request.
-- [ ] PM then will count the HW as done by merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
+- [x] Add your Project Manager as a Reviewer on the Pull-request.
+- [x] PM then will count the HW as done by merging the branch back into master.
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-- [ ] A registration form built with formik - include inputs for a `username` and a `password`
-- [ ] Form validation using Yup
-- [ ] A POST request made from the registration form to `http://localhost:6000/api/register` to add a user and retrieve a token - the request body should have the following shape:
+- [x] A registration form built with formik - include inputs for a `username` and a `password`
+- [x] Form validation using Yup
+- [x] A POST request made from the registration form to `http://localhost:6000/api/register` to add a user and retrieve a token - the request body should have the following shape:
 
 ```js
 {
-    username: "Your name",
+    username: "Your name",  
     password: "password"
 }
 ```
@@ -80,16 +87,16 @@ and the response object will look like this:
 }
 ```
 
-- [ ] Write a custom hook that can set and retrieve this token to and from local storage
+- [x] Write a custom hook that can set and retrieve this token to and from local storage
 
-- [ ] A GET request made with the token to `http://localhost:6000/api/restricted/data` to retrieve protected data
+- [x] A GET request made with the token to `http://localhost:6000/api/restricted/data` to retrieve protected data
 
-- [ ] Map over the array of objects you recieve and render some or all of it's information to the DOM.
+- [x] Map over the array of objects you receive and render some or all of it's information to the DOM.
 
 ## Stretch Problems
 
-1. Styling! Make your form pretty. Research pseudo elements and event selectors. Try to find interesting ways to present and layout the data you recieve from the back end.
+1. Styling! Make your form pretty. Research pseudo elements and event selectors. Try to find interesting ways to present and layout the data you receive from the back end.
 
-1. Make a Login form. Compuse your Formik form in such a way that it can be extracted into a component and reused for both Register and Login.
+1. Make a Login form. Compose your Formik form in such a way that it can be extracted into a component and reused for both Register and Login.
 
 1. Deep dive into validation. Can you make your register form check to see if a password is long enough? If it has special characters? Make two password fields for register and prevent the post request if the passwords don't match.
